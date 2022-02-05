@@ -8,95 +8,128 @@
       background-color: rgb(96, 169, 230);
       font-weight: bold;
     }
-  </style>
+
+    .indent-1 {margin-left:5px ; float: left;}
+    .indent-1 section {width: 60%; float: left;}
+
+    </style> 
+        <!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Google Fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+  
 </head>
 <body style="background-color:#74db74;">
-  <div>
-    <a href="file:///home/pablo/Documentos/Tercero/PAT/Practica2/docs/index.html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Cellnex_Telecom_logo.svg/2560px-Cellnex_Telecom_logo.svg.png" width="20%" height="20%"></a>
-    <nav>
-        <a href="file:///home/pablo/Documentos/Tercero/PAT/Practica2/docs/index.html">Principal</a>
-        <div>
-          <ul>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'about' %}">About Us</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Productos y Servicios</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Accionistas e inversores</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="https://www.cellnextelecom.com/">Pagina oficial</a>
+<!--Fijamos el fondo de la página -->
+    <!--Vamos a hacer una barra de navegación-->
+    <div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!--La organización y color de fondo de la barra de navegación-->
+          <a class = "navbar-brand" href="/home/pablo/Documentos/Tercero/PAT/Practica2/PAT-2/docs/index.html">
+            <!--Clase navbar-brand útil para hacer una navegación de empresa-->
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Cellnex_Telecom_logo.svg/2560px-Cellnex_Telecom_logo.svg.png" width="150" height="40">
+          </a>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <!--collapse para agrupar diferentes componentes-->
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="jobs.html">Puestos de trabajo</a>
               </li>
-          </ul>
-        </div>
-    </nav>
-  </div>
+              <li class="nav-item">
+                <a class="nav-link" href="accion.html">Accionistas e inversores</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="https://www.cellnextelecom.com/">Pagina oficial</a>
+                </li>
+            </ul>
+            <!--Metemos un buscador que no hace nada la verdad-->
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </div>
+      </nav>
+    </div>
   <div align = center>
-      <div>
-          <h1>Cellnex</h1>
-          <img src="https://s3-symbol-logo.tradingview.com/cellnex-telecom--600.png" width="20%" height="20%">
-
-          <h2>Emplazamientos en Europa</h2>
-          <table border="1" cellpadding="0" cellspacing="0" width="50%" bgcolor = "white">
-            <thead >
-              <tr >
-                <td data-cell-id="A1" >Principales indicadores</td>
-                <td data-cell-id="B1" >2014</td>
-                <td data-cell-id="C1" >2015</td>
-                <td data-cell-id="D1" >2016</td>
-                <td data-cell-id="E1" >2017</td>
-                <td data-cell-id="F1" >2018</td>
-                <td data-cell-id="G1" >2019</td>
-                <td data-cell-id="H1" >2020</td>
-              </tr>
-            </thead>
-            <tbody>
-              <tr style="height: 22px" >
-                <td data-cell-id="A2" >Número de emplazamientos</td>
-                <td data-cell-id="B2" >7.493</td>
-                <td data-cell-id="C2" >15.119</td>
-                <td data-cell-id="D2" >16.828</td>
-                <td data-cell-id="E2" >21.017</td>
-                <td data-cell-id="F2" >23.440</td>
-                <td data-cell-id="G2" >36.471</td>
-                <td data-cell-id="H2" >58.104</td>
-              </tr>
-              <tr style="height: 22px" >
-                <td data-cell-id="A3" >Número de emplazamientos España</td>
-                <td data-cell-id="B3" >7.172</td>
-                <td data-cell-id="C3" >7.410</td>
-                <td data-cell-id="D3" >7.415</td>
-                <td data-cell-id="E3" >8.030</td>
-                <td data-cell-id="F3" >8.589</td>
-                <td data-cell-id="G3" >9.794</td>
-                <td data-cell-id="H3" >10.327</td>
-              </tr>
-              <tr style="height: 14px" >
-                <td data-cell-id="A4" >Número de emplazamientos Italia</td>
-                <td data-cell-id="B4" >321</td>
-                <td data-cell-id="C4" >7.709</td>
-                <td data-cell-id="D4" >7.739</td>
-                <td data-cell-id="E4" >7.766</td>
-                <td data-cell-id="F4" >8.308</td>
-                <td data-cell-id="G4" >10.121</td>
-                <td data-cell-id="H4" >10.610</td>
-              </tr>
-              <tr style="height: 25px" >
-                <td data-cell-id="A5" >Número de emplazamientos Resto de Europa</td>
-                <td data-cell-id="B5" >-</td>
-                <td data-cell-id="C5" >-</td>
-                <td data-cell-id="D5" >1.674</td>
-                <td data-cell-id="E5" >5.221</td>
-                <td data-cell-id="F5" >6.543</td>
-                <td data-cell-id="G5" >16.556</td>
-                <td data-cell-id="H5" >37.167</td>
-              </tr>
-          </tbody>
-          </table>
-      </div>
+    <p></p>
+    <section class ="indent-1">
+    <h2>Emplazamientos en Europa</h2>
+    <table class = "table" border="1" cellpadding="0" cellspacing="0" bgcolor = "white">
+      <thead >
+        <tr >
+          <td data-cell-id="A1" >Principales indicadores</td>
+          <td data-cell-id="B1" >2014</td>
+          <td data-cell-id="C1" >2015</td>
+          <td data-cell-id="D1" >2016</td>
+          <td data-cell-id="E1" >2017</td>
+          <td data-cell-id="F1" >2018</td>
+          <td data-cell-id="G1" >2019</td>
+          <td data-cell-id="H1" >2020</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="height: 22px" >
+          <td data-cell-id="A2" >Número de emplazamientos</td>
+          <td data-cell-id="B2" >7.493</td>
+          <td data-cell-id="C2" >15.119</td>
+          <td data-cell-id="D2" >16.828</td>
+          <td data-cell-id="E2" >21.017</td>
+          <td data-cell-id="F2" >23.440</td>
+          <td data-cell-id="G2" >36.471</td>
+          <td data-cell-id="H2" >58.104</td>
+        </tr>
+        <tr style="height: 22px" >
+          <td data-cell-id="A3" >Número de emplazamientos España</td>
+          <td data-cell-id="B3" >7.172</td>
+          <td data-cell-id="C3" >7.410</td>
+          <td data-cell-id="D3" >7.415</td>
+          <td data-cell-id="E3" >8.030</td>
+          <td data-cell-id="F3" >8.589</td>
+          <td data-cell-id="G3" >9.794</td>
+          <td data-cell-id="H3" >10.327</td>
+        </tr>
+        <tr style="height: 14px" >
+          <td data-cell-id="A4" >Número de emplazamientos Italia</td>
+          <td data-cell-id="B4" >321</td>
+          <td data-cell-id="C4" >7.709</td>
+          <td data-cell-id="D4" >7.739</td>
+          <td data-cell-id="E4" >7.766</td>
+          <td data-cell-id="F4" >8.308</td>
+          <td data-cell-id="G4" >10.121</td>
+          <td data-cell-id="H4" >10.610</td>
+        </tr>
+        <tr style="height: 25px" >
+          <td data-cell-id="A5" >Número de emplazamientos Resto de Europa</td>
+          <td data-cell-id="B5" >-</td>
+          <td data-cell-id="C5" >-</td>
+          <td data-cell-id="D5" >1.674</td>
+          <td data-cell-id="E5" >5.221</td>
+          <td data-cell-id="F5" >6.543</td>
+          <td data-cell-id="G5" >16.556</td>
+          <td data-cell-id="H5" >37.167</td>
+        </tr>
+    </tbody>
+    </table>
+    </section>
+    <h2>Conócenos</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/T4m1Vq9Lnmk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+  </div>
+  <div align= center>
+    <p></p>
+    <h2>¿Quieres trabajar para Cellnex?</h2>
+    <h3>Buscamos gente como tú</h3>
+    <img src= "https://aimgaming.eu/wp-content/uploads/2017/01/WE_WANT_YOU.png" width="20%" height="20%">
+    <a href = "jobs.html"><button class="btn btn-outline-primary">Pincha aquí</button></a>
+    
   </div>
 
 </body>
 </html>
+
+<!--Página con ofertas de trabajo + poder rellenar datos y subir curiculum-->
+<!-- Página con el valor de la acción de la empresa-->
