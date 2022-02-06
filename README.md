@@ -1,6 +1,6 @@
 # Práctica2 PAT - Cellnex
 Esta página web es la primera página web que realizo este curso. Por este motivo, es una página sencilla únicamente principalmente todo con HTTP, un poco de CSS y poco JavaScript.
-El enlace a la página principal se puede encontrar en: https://menendez6.github.io/
+El enlace a la página principal se puede encontrar en: https://menendez6.github.io/PAT-2/
 
 # Intrucciones
 
